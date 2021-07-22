@@ -26,6 +26,8 @@ export const Nav = styled.nav `
     height: 15vh;
     box-shadow: 0 0.25rem 0.25rem grey;
     overflow: none;
+    background-color: white;
+    z-index: 2;
 `;
 
 export const Section = styled.section `
@@ -51,6 +53,7 @@ export const NavItemChild = styled(Link)`
     align-items: center;
     text-decoration: none;
     text-align: center;
+    place-content: center center    ;
     font-size: 1.5rem;
     font-family: 'Saira', sans-serif;
     color: ${props => props.color};
@@ -130,7 +133,7 @@ function DropDown ({ items, multiSelect = false }) {
     return (
         <Dddiv onClick={() => toggle(!open)}>
             {items.map(item => (
-                <NavItemChild pad="2rem" color="grey" onClick={() => toggle()}>{item.value}</NavItemChild>
+                <NavItemChild to={item.link} pad="2rem" color="grey" onClick={() => toggle()}>{item.value}</NavItemChild>
             ))}
         </Dddiv>
     )

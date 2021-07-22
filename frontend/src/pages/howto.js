@@ -1,8 +1,9 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 function Howto () {
     return (
-        <h1>Howto</h1>
+        <Navbar></Navbar>
     )
 }
 

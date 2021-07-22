@@ -6,15 +6,15 @@ import { DropDown, DropDownMenu } from './NavbarStyles';
 const gamedd = [
     {
         value: 'How To',
-        // link: '/game/how-to',
+        link: '/game/how-to',
     },
     {
         value: 'Create',
-        // link: '/game/create',
+        link: '/game/create',
     },
     {
         value: 'Join',
-        // link: '/game/join',
+        link: '/game/join',
     },
 ]
 
@@ -25,6 +25,7 @@ function Navbar () {
                 <NavItemChild to="/">
                     <NavBrand width="48" height="auto" src={"/images/Logo.png"} alt="tripla"></NavBrand>
                     <Name>tripla</Name>
+                    
                 </NavItemChild>
             </Section>
             <Section>
@@ -35,8 +36,8 @@ function Navbar () {
                 </NavItems>
             </Section>
             <Section margin="0 0.75rem 0 auto">
-                <Btn bgcolor="#17E7AC" pad="1rem 2rem"><NavItem to="login" color="white" focuscolor="white" title="Login"></NavItem></Btn>
-                <Btn bgcolor="#491985" pad="1rem 2rem"><NavItem to="sign-up" color="white" focuscolor="white" title="Sign Up"></NavItem></Btn>
+                <Btn bgcolor="#17E7AC" pad="1rem 2rem"><NavItem to="/login" color="white" focuscolor="white" title="Login"></NavItem></Btn>
+                <Btn bgcolor="#491985" pad="1rem 2rem"><NavItem to="/signup" color="white" focuscolor="white" title="Sign Up"></NavItem></Btn>
             </Section>
         </Nav>
     );
