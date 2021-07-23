@@ -24,7 +24,7 @@ export const AnimatedText = styled.h1 `
     color: ${props => props.color};
     margin: 0;
     padding-top: ${props => props.pad};
-    animation: fade 10s infinite;
+    animation: fade 15s infinite;
 
     @keyframes fade {
         0% {
@@ -61,12 +61,12 @@ export const AnimatedText = styled.h1 `
 
     &::after {
         content: "";
-        animation: change 10s linear infinite;
+        animation: change 15s linear infinite;
     }
 
     @keyframes change {
-        20% {
-        content: "${props => props.text["0"]}";;
+        0% {
+            content: "${props => props.text["0"]}";
         }
         60% {
             content: "${props => props.text[1]}";
