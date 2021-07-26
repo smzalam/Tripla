@@ -9,11 +9,15 @@ import Create from './pages/create';
 import Join from './pages/join';
 import Login from './pages/login';
 import SignUp from './pages/signup';
+import New from './pages/new'
 
 function App() {
   return (
     <div className="App">
         <Switch>
+          <Route path="/new">
+            <New></New>
+          </Route>
           <Route path="/signup">
             <SignUp></SignUp>
           </Route>

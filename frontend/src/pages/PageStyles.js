@@ -8,6 +8,12 @@ export const Wrapper = styled.div `
     width: ${props => props.width};
     background-color: ${props => props.bgcolor};
     z-index: ${props => props.index};
+    margin: ${props => props.margin};
+    display: flex;
+    flex-flow: ${props => props.ff};
+    justify-content: ${props => props.jc};
+    align-items: ${props => props.ai};
+    align-content: ${props => props.ac};
 `;
 
 export const HeaderText = styled.h1 `
@@ -78,13 +84,28 @@ export const AnimatedText = styled.h1 `
 `;
 
 export const VideoBg = styled.video `
-    position: absolute;
-    width: 100vw;
-    height: 85vh;
+    /* position: absolute; */
+    width: ${props => props.width};
+    height: ${props => props.height};
     right: 0;
     object-fit: cover;
     margin: 0;
     padding: 0;
     /* background-color: black; */
-    opacity: 0.4;
+    opacity: 0.5;
+`;
+
+export const Card = styled.div `
+    width: ${props => props.width};
+    height: ${props => props.height};
+    border: none;
+    border-radius: 1.5rem;
+    background-color: ${props => props.bgcolor};
+`;
+
+export const Box = styled.div `
+    border: 0.2rem solid black;
+    border-radius: 1.5rem;
+    height: 40vh;   
+    margin: 2rem;
 `;

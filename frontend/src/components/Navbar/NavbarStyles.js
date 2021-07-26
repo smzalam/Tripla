@@ -41,6 +41,7 @@ export const Section = styled.section `
 export const NavBrand = styled.img`
     width: ${props => props.w};
     height: ${props => props.h};
+    
 `;
 
 export const NavItems = styled.ul `
@@ -74,7 +75,7 @@ export const NavItemChild = styled(Link)`
 export const Name = styled.h1 `
     color: black;
     font-size: 2.5rem;
-    margin: auto;
+    margin: ${props => props.margin};
     padding-left: 2rem;
     font-family: 'Russo One', sans-serif;
 `;

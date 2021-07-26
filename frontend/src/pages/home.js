@@ -9,12 +9,12 @@ function Home () {
     return (
         <div>
             <Navbar></Navbar>
-            <Wrapper index="1" pos="relative" height="85vh" width="100vw" bgcolor="#17E7AC">
+            <Wrapper index="1" pos="relative" height="85vh" width="100vw" bgcolor="white">
                 <Wrapper index="-1" pos="absolute" height="85vh" width="100vw">
-                    <VideoBg autoPlay loop muted src={Classroom} type="videos/mp4"></VideoBg>
+                    <VideoBg autoPlay loop muted src={Classroom} type="videos/mp4" height="inherit" width="inherit"></VideoBg>
                 </Wrapper>
-                <Wrapper index="3" pos="relative" height="auto" width="auto">                    
-                    <AnimatedText color="#491985" pad="9rem" text={AnimatedTextTitles}></AnimatedText>
+                <Wrapper index="3" pos="relative" height="auto" width="auto" ff="column nowrap" margin="auto">                    
+                    <AnimatedText color="#491985" text={AnimatedTextTitles}></AnimatedText>
                     <HeaderText color="black" pad="0.5rem">the classroom.</HeaderText>
                 </Wrapper>
             </Wrapper>
