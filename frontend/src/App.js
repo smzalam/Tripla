@@ -10,12 +10,16 @@ import Join from './pages/join';
 import Login from './pages/login';
 import SignUp from './pages/signup';
 import New from './pages/new'
+import PodProfile from './pages/podprofile';
 
 function App() {
   return (
     <div className="App">
         <Switch>
-          <Route path="/new">
+          <Route path="/game/pod-profile">
+            <PodProfile></PodProfile>
+          </Route>
+          <Route path="/game/new">
             <New></New>
           </Route>
           <Route path="/signup">

@@ -14,11 +14,15 @@ export const Wrapper = styled.div `
     justify-content: ${props => props.jc};
     align-items: ${props => props.ai};
     align-content: ${props => props.ac};
+    bottom: ${props => props.bottom};
+    top: ${props => props.top};
+    border: ${props => props.border};
+    border-radius: ${props => props.borderrad};
 `;
 
 export const HeaderText = styled.h1 `
     font-family: 'Russo One', sans-serif;
-    font-size: 6rem;
+    font-size: ${props => props.fontsize};
     color: ${props => props.color};
     margin: 0;
     padding-top: ${props => props.pad};
@@ -109,3 +113,46 @@ export const Box = styled.div `
     height: 40vh;   
     margin: 2rem;
 `;
+
+export const Input = styled.input `
+    padding: 0.5em;
+    margin: 0.5em;
+    width: ${props => props.width};
+    height: ${props => props.height};
+    color: ${props => props.color};
+    /* border: 0.2rem solid black; */
+    border-radius: 1.5rem;
+    font-size: ${props => props.fontsize};
+    font-family: 'Russo One', sans-serif;
+
+    ::placeholder {
+        color: grey;    
+        text-align: center;
+    }
+`;
+
+function QA () {
+    return (
+        <Wrapper pos="relative" width="fit-content" ff="row nowrap" jc="space-around" ai="center" margin="1rem" border="0.2rem solid black">
+            <Wrapper pos="relative" ff="column nowrap" jc="center" ai="center" border="0.2rem solid black">
+                <Wrapper margin="1rem">Q</Wrapper>
+                <Wrapper margin="1rem">A</Wrapper>
+            </Wrapper>
+            <Wrapper pos="relative" ff="column nowrap" jc="center" ai="center">
+                <Wrapper>
+                    <Input type="text" placeholder="Enter your question" width="100%"/>
+                </Wrapper>
+                <Wrapper ff="row nowrap" jc="center" ai="center">
+                    <Input type="text" placeholder="Enter your answers" width="10rem"/>
+                    <Input type="text" placeholder="Enter your answers" width="10rem"/>
+                    <Input type="text" placeholder="Enter your answers" width="10rem"/>
+                    <Input type="text" placeholder="Enter your answers" width="10rem"/>
+                </Wrapper>
+            </Wrapper>
+        </Wrapper>
+    )
+}
+
+export {
+    QA,
+}

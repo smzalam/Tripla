@@ -13,7 +13,7 @@ function Create () {
 
                 <Box></Box>
                 <Wrapper ff="column nowrap" jc="center" ai="center">
-                    <Btn bgcolor="#491985" pad="1rem 2rem"><NavItem to="/new" color="white" focuscolor="white" title="Create New Game"></NavItem></Btn>
+                    <Btn bgcolor="#491985" pad="1rem 2rem"><NavItem to="/game/new" color="white" focuscolor="white" title="Create New Game"></NavItem></Btn>
                 </Wrapper>
             </Card>
         </Wrapper>
