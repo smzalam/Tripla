@@ -110,8 +110,9 @@ export const Card = styled.div `
 export const Box = styled.div `
     border: 0.2rem solid black;
     border-radius: 1.5rem;
-    height: 40vh;   
+    height: ${props => props.height};   
     margin: 2rem;
+    width: ${props => props.width};
 `;
 
 export const Input = styled.input `
@@ -134,13 +135,13 @@ export const Input = styled.input `
 function QA () {
     return (
         <Wrapper pos="relative" width="fit-content" ff="row nowrap" jc="space-around" ai="center" margin="1rem" border="0.2rem solid black">
-            <Wrapper pos="relative" ff="column nowrap" jc="center" ai="center" border="0.2rem solid black">
+            <Wrapper pos="relative" ff="column nowrap" jc="center" ai="center" border="">
                 <Wrapper margin="1rem">Q</Wrapper>
                 <Wrapper margin="1rem">A</Wrapper>
             </Wrapper>
             <Wrapper pos="relative" ff="column nowrap" jc="center" ai="center">
                 <Wrapper>
-                    <Input type="text" placeholder="Enter your question" width="100%"/>
+                    <Input type="text" placeholder="Enter your question" width="100%" size="98"/>
                 </Wrapper>
                 <Wrapper ff="row nowrap" jc="center" ai="center">
                     <Input type="text" placeholder="Enter your answers" width="10rem"/>

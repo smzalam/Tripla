@@ -17,8 +17,8 @@ function PodProfile () {
                 </Wrapper>
                 <Wrapper pos='relative' ff="column nowrap" jc="center" ai="center">
                     <Wrapper pos='relative' ff="row nowrap" jc="space-between" ai="center">
-                        <Box>Hi</Box>
-                        <Box>Hi</Box>
+                        <Box width="500px" height="fit-content">Hi</Box>
+                        <Box width='500px' height="fit-content">Hi</Box>
                     </Wrapper>
                     <Wrapper pos='relative' ff="column nowrap" jc="center" ai="center">
                         <QA></QA>

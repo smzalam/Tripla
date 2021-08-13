@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import { AnimatedText, Wrapper, HeaderText, VideoBg, Wrapperd } from './PageStyles';
+import { AnimatedText, Wrapper, HeaderText, VideoBg} from './PageStyles';
 import Classroom from "../videos/classroom.mp4"
 
 const AnimatedTextTitles = ["Putting a twist in", "Adding interactivity into", "Utilizing technology in"]
